@@ -14,3 +14,8 @@
 	UPDATE employee SET name = 'Giresun' WHERE name = 'G%' RETURNING *;
 
 --4- Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+	DELETE FROM employee WHERE name ILIKE 'adriana' ;
+    	DELETE FROM employee WHERE birthday = '2003-07-16' ;
+    	DELETE FROM employee WHERE email = 'aglenton7@clickbank.net' ;
+    	DELETE FROM employee WHERE id = '12' ;
+    	DELETE FROM employee WHERE name ILIKE '%n';
